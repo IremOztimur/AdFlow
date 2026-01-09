@@ -21,7 +21,7 @@ export function ModelNode({ id, data }: { id: string, data: any }) {
       <CardContent className="p-4 space-y-3">
          <div className="space-y-1">
           <Select 
-            value={data.model || 'dall-e-3'} 
+            value={data.model || 'gemini-2.5-flash-image'} 
             onValueChange={(val) => updateNodeData(id, { model: val })}
           >
             <SelectTrigger className="text-xs">

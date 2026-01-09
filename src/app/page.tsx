@@ -52,7 +52,7 @@ function Flow() {
     } else if (type === 'promptNode') {
         data = { template: '{{Product Name}}, {{Description}}, style: {{Style}}' };
     } else if (type === 'modelNode') {
-        data = { model: 'dall-e-3' };
+        data = { model: 'gemini-2.5-flash-image' };
     } else if (type === 'outputNode') {
         data = { images: [], status: 'idle' };
     }
