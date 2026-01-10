@@ -7,7 +7,7 @@ A node-based visual workflow builder for generating image ads.
 - **Node Types**:
   - **Input**: Define text or image sources.
   - **Prompt Builder**: Combine inputs using handlebars syntax (e.g., `{{Product Name}}`).
-  - **Model Selector**: Choose between DALL-E 3, DALL-E 2.
+  - **Model Selector**: Choose between DALL-E 3, DALL-E 2, or Gemini models (e.g., Gemini 2.5 Flash Image).
   - **Output Gallery**: View generated results.
 - **Persistence**: Workflows and API keys are saved locally in the browser.
 - **Real & Mock Modes**: Works with OpenAI API Key (Client-side) or falls back to mock generation for testing.
@@ -48,6 +48,8 @@ A node-based visual workflow builder for generating image ads.
 - **High-Fidelity Models**: Integrate `gpt-image-1.5` or similar advanced models to better preserve input details (product fidelity) in the final output.
 - **Iterative Optimization**: Improve the Prompt Optimizer to allow for multi-turn refinement (user feedback loop) rather than a one-off suggestion.
 - **Image Editing**: Add an in-browser editor (crop, mask, text overlay) to refine generated images before downloading.
+- **Rating & Feedback UX**: Implement a rating system for generated images to collect user experience data and improve model performance.
+- **Data Collection**: Save generated images along with their prompts and user ratings to build a dataset for future fine-tuning.
 - **Backend Execution**: Move generation logic to a serverless function.
 
 ---
